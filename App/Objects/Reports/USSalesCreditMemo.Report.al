@@ -4,7 +4,7 @@ report 50201 "BBC WOSF Sales Credit Memo"
     WordLayout = './Objects/Reports/Layouts/Sales Credit Memo.docx';
 
     Caption = 'Sales Credit Memo';
-    DefaultLayout = Word;
+    DefaultLayout = RDLC;
     Permissions = TableData "Sales Shipment Buffer" = rimd;
     PreviewMode = PrintLayout;
     WordMergeDataItem = Header;
@@ -367,6 +367,16 @@ report 50201 "BBC WOSF Sales Credit Memo"
             column(NewTotalAmount_Lbl; StrSubstNo('Total %1', LoadCurrencyCode()))
             {
             }
+            column(RemiteAddr1; RemiteAddr[1]) { }
+            column(RemiteAddr2; RemiteAddr[2]) { }
+            column(RemiteAddr3; RemiteAddr[3]) { }
+            column(RemiteAddr4; RemiteAddr[4]) { }
+            column(RemiteAddr5; RemiteAddr[5]) { }
+            column(RemiteAddr6; RemiteAddr[6]) { }
+            column(RemiteAddr7; RemiteAddr[7]) { }
+            column(RemiteAddr8; RemiteAddr[8]) { }
+            column(GetWorkDescription; GetWorkDescription()) { }
+
             dataitem(Line; "Sales Cr.Memo Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -946,6 +956,7 @@ report 50201 "BBC WOSF Sales Credit Memo"
         CustAddr: array[8] of Text[50];
         ShipToAddr: array[8] of Text[50];
         CompanyAddr: array[8] of Text[50];
+        RemiteAddr: array[8] of Text[50];
         SalesPersonText: Text[50];
         TotalText: Text[50];
         TotalExclVATText: Text[50];
@@ -1099,10 +1110,17 @@ report 50201 "BBC WOSF Sales Credit Memo"
     end;
 
     local procedure FormatAddressFields(var SalesCrMemoHeader: Record "Sales Cr.Memo Header");
+    var
+        Location: Record Location;
     begin
         FormatAddress.GetCompanyAddr(SalesCrMemoHeader."Responsibility Center", ResponsibilityCenter, CompanyInformation, CompanyAddr);
         FormatAddress.SalesCrMemoBillTo(CustAddr, SalesCrMemoHeader);
         ShowShippingAddr := FormatAddress.SalesCrMemoShipTo(ShipToAddr, CustAddr, SalesCrMemoHeader);
+        if (SalesCrMemoHeader."Location Code" <> '') and Location.Get(SalesCrMemoHeader."Location Code") then
+            FormatAddress.FormatAddr(RemiteAddr, Location.Name, Location."Name 2", '', Location.Address, Location."Address 2", Location.City,
+            Location."Post Code", Location.County, Location."Country/Region Code")
+        else
+            Clear(RemiteAddr);
     end;
 
     local procedure FormatDocumentFields(SalesCrMemoHeader: Record "Sales Cr.Memo Header");

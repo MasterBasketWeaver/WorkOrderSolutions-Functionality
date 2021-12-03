@@ -24,7 +24,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>20.34672cm</Height>
+                  <Height>14.63172cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -120,7 +120,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>From</Value>
+                                                    <Value>Remit-to</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>9pt</FontSize>
@@ -223,7 +223,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CompanyAddress1.Value</Value>
+                                                    <Value>=Fields!RemiteAddr1.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>9pt</FontSize>
@@ -324,7 +324,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CompanyAddress2.Value</Value>
+                                                    <Value>=Fields!RemiteAddr2.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -422,7 +422,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CompanyAddress3.Value</Value>
+                                                    <Value>=Fields!RemiteAddr3.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -520,7 +520,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CompanyAddress4.Value</Value>
+                                                    <Value>=Fields!RemiteAddr4.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -613,14 +613,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="CompanyAddress5">
+                                          <Textbox Name="Textbox2">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CompanyAddress5.Value</Value>
+                                                    <Value>=Fields!RemiteAddr5.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -632,7 +632,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>CompanyAddress5</rd:DefaultName>
+                                            <rd:DefaultName>Textbox2</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -713,14 +713,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="CompanyAddress6">
+                                          <Textbox Name="Textbox3">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CompanyAddress6.Value</Value>
+                                                    <Value>=Fields!RemiteAddr6.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -732,7 +732,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>CompanyAddress6</rd:DefaultName>
+                                            <rd:DefaultName>Textbox3</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -2377,7 +2377,7 @@
                               </TablixRowHierarchy>
                               <RepeatRowHeaders>true</RepeatRowHeaders>
                               <DataSetName>DataSet_Result</DataSetName>
-                              <Top>6.93228cm</Top>
+                              <Top>3.83758cm</Top>
                               <Left>0.93275cm</Left>
                               <Height>2.2848cm</Height>
                               <Width>19.06988cm</Width>
@@ -2721,8 +2721,8 @@
                                   </FilterValues>
                                 </Filter>
                               </Filters>
-                              <Top>14.52721cm</Top>
-                              <Left>0.96663cm</Left>
+                              <Top>12.80834cm</Top>
+                              <Left>0.87152cm</Left>
                               <Height>1.16418cm</Height>
                               <Width>16.8cm</Width>
                               <ZIndex>2</ZIndex>
@@ -3470,8 +3470,8 @@
                                   </FilterValues>
                                 </Filter>
                               </Filters>
-                              <Top>12.91826cm</Top>
-                              <Left>0.96663cm</Left>
+                              <Top>11.19939cm</Top>
+                              <Left>0.87152cm</Left>
                               <Height>1.37612cm</Height>
                               <Width>15.56367cm</Width>
                               <ZIndex>3</ZIndex>
@@ -4196,7 +4196,7 @@
                               <RepeatRowHeaders>true</RepeatRowHeaders>
                               <KeepTogether>true</KeepTogether>
                               <DataSetName>DataSet_Result</DataSetName>
-                              <Top>9.4355cm</Top>
+                              <Top>6.3408cm</Top>
                               <Left>12.74295cm</Left>
                               <Height>2.946cm</Height>
                               <Width>7.25968cm</Width>
@@ -4207,14 +4207,14 @@
                                 </Border>
                               </Style>
                             </Tablix>
-                            <Textbox Name="BilltoCustomerNo_Lbl2">
+                            <Textbox Name="ItemNo_Line_Lbl15">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!BilltoCustumerNo_Lbl.Value</Value>
+                                      <Value>Notes</Value>
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
@@ -4222,499 +4222,37 @@
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
-                                  <Style />
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>BilltoCustomerNo_Lbl</rd:DefaultName>
-                              <Top>3.78534cm</Top>
-                              <Left>0.96663cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.76538cm</Width>
+                              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+                              <Top>9.55572cm</Top>
+                              <Left>0.87152cm</Left>
+                              <Height>0.4095cm</Height>
+                              <Width>5.5cm</Width>
                               <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
-                                  <Color>LightGrey</Color>
                                   <Style>None</Style>
                                 </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="YourReference__Lbl">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!YourReference_Lbl.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>YourReference__Lbl</rd:DefaultName>
-                              <Top>3.78534cm</Top>
-                              <Left>5.93684cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.81019cm</Width>
-                              <ZIndex>6</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="BilltoCustumerNo2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!BilltoCustumerNo.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>BilltoCustumerNo</rd:DefaultName>
-                              <Top>4.17695cm</Top>
-                              <Left>0.96663cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.76538cm</Width>
-                              <ZIndex>7</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="YourReference2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!YourReference.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>YourReference</rd:DefaultName>
-                              <Top>4.17695cm</Top>
-                              <Left>5.93684cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.81019cm</Width>
-                              <ZIndex>8</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="DocumentDate_Lbl2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!DocumentDate_Lbl.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>DocumentDate_Lbl</rd:DefaultName>
-                              <Top>3.72187cm</Top>
-                              <Left>16.20605cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.76401cm</Width>
-                              <ZIndex>9</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="DocumentDate2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!DocumentDate.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>DocumentDate</rd:DefaultName>
-                              <Top>4.14521cm</Top>
-                              <Left>16.20605cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.76401cm</Width>
-                              <ZIndex>10</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="PaymentTermsDescription_Lbl2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!PaymentTermsDescription_Lbl.Value</Value>
-                                      <Style>
-                                        <FontFamily>segoe uI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>PaymentTermsDescription_Lbl</rd:DefaultName>
-                              <Top>4.85076cm</Top>
-                              <Left>5.91548cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.81019cm</Width>
-                              <ZIndex>11</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="PaymentTermsDescription2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!PaymentTermsDescription.Value</Value>
-                                      <Style>
-                                        <FontFamily>segoe uI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>PaymentTermsDescription</rd:DefaultName>
-                              <Top>5.28468cm</Top>
-                              <Left>5.93684cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.78883cm</Width>
-                              <ZIndex>12</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="PaymentMethodDescription_Lbl2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!PaymentMethodDescription_Lbl.Value</Value>
-                                      <Style>
-                                        <FontFamily>segoe uI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>PaymentMethodDescription_Lbl</rd:DefaultName>
-                              <Top>4.85076cm</Top>
-                              <Left>0.98411cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.76538cm</Width>
-                              <ZIndex>13</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="PaymentMethodDescription2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!PaymentMethodDescription.Value</Value>
-                                      <Style>
-                                        <FontFamily>segoe uI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>PaymentMethodDescription</rd:DefaultName>
-                              <Top>5.28468cm</Top>
-                              <Left>0.98411cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.76538cm</Width>
-                              <ZIndex>14</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="YourReference__Lbl2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!ExtDocLbl.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>YourReference__Lbl</rd:DefaultName>
-                              <Top>3.72187cm</Top>
-                              <Left>11.02339cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.81836cm</Width>
-                              <ZIndex>15</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="YourReference3">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!ExternalDocumentNo_Header.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>YourReference</rd:DefaultName>
-                              <Top>4.17695cm</Top>
-                              <Left>11.03156cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.81019cm</Width>
-                              <ZIndex>16</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="SalesPersonBlank_Lbl2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!SalesPerson_Lbl.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>SalesPersonBlank_Lbl</rd:DefaultName>
-                              <Top>4.85076cm</Top>
-                              <Left>11.03156cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.80203cm</Width>
-                              <ZIndex>17</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="SalesPersonName2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!SalesPersonName.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>SalesPersonName</rd:DefaultName>
-                              <Top>5.28468cm</Top>
-                              <Left>11.02339cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.81835cm</Width>
-                              <ZIndex>18</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
+                                <VerticalAlign>Top</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
                             </Textbox>
-                            <Textbox Name="QuoteNo_Lbl">
-                              <CanGrow>true</CanGrow>
+                            <Textbox Name="ItemNo_Line_Lbl16">
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!AppliesToDocument_Lbl.Value</Value>
+                                      <Value>=Fields!GetWorkDescription.Value</Value>
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>QuoteNo_Lbl</rd:DefaultName>
-                              <Top>4.85076cm</Top>
-                              <Left>16.20605cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.79342cm</Width>
-                              <ZIndex>19</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="QuoteNo">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!AppliesToDocument.Value</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -4723,18 +4261,19 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>QuoteNo</rd:DefaultName>
-                              <Top>5.2741cm</Top>
-                              <Left>16.20605cm</Left>
-                              <Height>0.38806cm</Height>
-                              <Width>3.78025cm</Width>
-                              <ZIndex>20</ZIndex>
+                              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+                              <Top>10.0005cm</Top>
+                              <Left>0.87152cm</Left>
+                              <Height>1.0225cm</Height>
+                              <Width>19.13111cm</Width>
+                              <ZIndex>6</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
+                                <VerticalAlign>Top</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
+                                <PaddingRight>2pt</PaddingRight>
                               </Style>
                             </Textbox>
                           </ReportItems>
@@ -4776,7 +4315,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Height>20.34672cm</Height>
+            <Height>14.63172cm</Height>
             <Width>21cm</Width>
             <Style>
               <Border>
@@ -4785,7 +4324,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>20.34672cm</Height>
+        <Height>15.18205cm</Height>
         <Style />
       </Body>
       <Width>21cm</Width>
@@ -4953,7 +4492,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.5875cm</Height>
+          <Height>4.6355cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -5164,6 +4703,216 @@
                 <VerticalAlign>Bottom</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>5pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="ItemNo_Line_Lbl8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!CompanyAddress1.Value</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+              <Top>1.5415cm</Top>
+              <Left>7.92999cm</Left>
+              <Height>0.4095cm</Height>
+              <Width>5.5cm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="ItemNo_Line_Lbl10">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!CompanyAddress2.Value</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+              <Top>1.98628cm</Top>
+              <Left>7.92999cm</Left>
+              <Height>0.4095cm</Height>
+              <Width>5.5cm</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="ItemNo_Line_Lbl11">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!CompanyAddress3.Value</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+              <Top>2.39578cm</Top>
+              <Left>7.92999cm</Left>
+              <Height>0.4095cm</Height>
+              <Width>5.5cm</Width>
+              <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="ItemNo_Line_Lbl12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!CompanyAddress4.Value</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+              <Top>2.84055cm</Top>
+              <Left>7.92999cm</Left>
+              <Height>0.4095cm</Height>
+              <Width>5.5cm</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="ItemNo_Line_Lbl13">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!CompanyAddress5.Value</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+              <Top>3.28533cm</Top>
+              <Left>7.92999cm</Left>
+              <Height>0.4095cm</Height>
+              <Width>5.5cm</Width>
+              <ZIndex>10</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="ItemNo_Line_Lbl14">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Fields!CompanyAddress6.Value</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ItemNo_Line_Lbl</rd:DefaultName>
+              <Top>3.73011cm</Top>
+              <Left>7.92999cm</Left>
+              <Height>0.4095cm</Height>
+              <Width>5.5cm</Width>
+              <ZIndex>11</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
               </Style>
             </Textbox>
           </ReportItems>
@@ -5574,6 +5323,33 @@ End Function
         </Field>
         <Field Name="NewTotalAmount_Lbl">
           <DataField>NewTotalAmount_Lbl</DataField>
+        </Field>
+        <Field Name="RemiteAddr1">
+          <DataField>RemiteAddr1</DataField>
+        </Field>
+        <Field Name="RemiteAddr2">
+          <DataField>RemiteAddr2</DataField>
+        </Field>
+        <Field Name="RemiteAddr3">
+          <DataField>RemiteAddr3</DataField>
+        </Field>
+        <Field Name="RemiteAddr4">
+          <DataField>RemiteAddr4</DataField>
+        </Field>
+        <Field Name="RemiteAddr5">
+          <DataField>RemiteAddr5</DataField>
+        </Field>
+        <Field Name="RemiteAddr6">
+          <DataField>RemiteAddr6</DataField>
+        </Field>
+        <Field Name="RemiteAddr7">
+          <DataField>RemiteAddr7</DataField>
+        </Field>
+        <Field Name="RemiteAddr8">
+          <DataField>RemiteAddr8</DataField>
+        </Field>
+        <Field Name="GetWorkDescription">
+          <DataField>GetWorkDescription</DataField>
         </Field>
         <Field Name="LineNo_Line">
           <DataField>LineNo_Line</DataField>

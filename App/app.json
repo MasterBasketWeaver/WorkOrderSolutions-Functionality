@@ -1,0 +1,36 @@
+{
+  "id": "ba09cc93-8888-40e1-a1eb-34837304bed0",
+  "name": "Workover Solutions Functionality",
+  "publisher": "Bam Boom Cloud",
+  "version": "19.0.0.0",
+  "brief": "Provides custom functionality for Workover Solutions.",
+  "description": "Provides custom functionality for Workover Solutions.",
+  "privacyStatement": "http://www.bamboomcloud.com/",
+  "EULA": "http://www.bamboomcloud.com/",
+  "help": "http://www.bamboomcloud.com/",
+  "url": "http://www.bamboomcloud.com/",
+  "logo": "./Logo/BBClogo.png",
+  "dependencies": [
+
+  ],
+  "screenshots": [],
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50199
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://bamboomcloud.com/help/",
+  "resourceExposurePolicy":
+  {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "features": ["TranslationFile"],
+  "applicationInsightsConnectionString": "InstrumentationKey=d26ca36d-e333-43cd-9de5-1ea5c85f8e39;IngestionEndpoint=https://uksouth-0.in.applicationinsights.azure.com/",
+  "runtime": "8.0",
+  "target": "Cloud",
+  "propagateDependencies": true
+}

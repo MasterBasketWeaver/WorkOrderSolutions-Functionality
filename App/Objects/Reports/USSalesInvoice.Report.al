@@ -1,10 +1,10 @@
-report 50100 "BBC WOSF Sales Invoice"
+report 50200 "BBC WOSF Sales Invoice"
 {
-    RDLCLayout = './Objects/Reports/Layouts/Derma CA Sales Invoice.rdl';
+    RDLCLayout = './Objects/Reports/Layouts/US - Sales Invoice.rdl';
     WordLayout = './Objects/Reports/Layouts/US - Sales Invoice.docx';
 
     Caption = 'Sales Invoice';
-    DefaultLayout = RDLC;
+    DefaultLayout = Word;
     EnableHyperlinks = true;
     Permissions = TableData "Sales Shipment Buffer" = rimd;
     PreviewMode = PrintLayout;
@@ -426,7 +426,25 @@ report 50100 "BBC WOSF Sales Invoice"
             column(BankTransitNo; BankAccount."Transit No.") { }
             column(BankAccountNo; BankAccount."Bank Account No.") { }
             column(BankNo; BankAccount."No.") { }
-
+            column(RemiteAddr1; RemiteAddr[1]) { }
+            column(RemiteAddr2; RemiteAddr[2]) { }
+            column(RemiteAddr3; RemiteAddr[3]) { }
+            column(RemiteAddr4; RemiteAddr[4]) { }
+            column(RemiteAddr5; RemiteAddr[5]) { }
+            column(RemiteAddr6; RemiteAddr[6]) { }
+            column(RemiteAddr7; RemiteAddr[7]) { }
+            column(RemiteAddr8; RemiteAddr[8]) { }
+            column(HeaderWell; "RSMUS Well") { }
+            column(HeaderRigOrCTU; "RSMUS Rig or CTU") { }
+            column(HeaderCounty; "RSMUS County") { }
+            column(HeaderCustomerRep; "RSMUS Customer Rep") { }
+            column(HeaderWOSJob; "RSMUS WOS Job") { }
+            column(HeaderCustomerReference; "RSMUS Customer Reference") { }
+            column(HeaderServiceStartDate; DateFormatMgt.GetDateText("RSMUS Service Start Date")) { }
+            column(HeaderClientPO; "RSMUS Client PO") { }
+            column(HeaderAFE; "RSMUS AFE") { }
+            column(PaymentTerms; PaymentTerms.Code) { }
+            column(GetWorkDescription; GetWorkDescription()) { }
 
             dataitem(Line; "Sales Invoice Line")
             {
@@ -1261,6 +1279,7 @@ report 50100 "BBC WOSF Sales Invoice"
         CustAddr: array[8] of Text;
         ShipToAddr: array[8] of Text;
         CompanyAddr: array[8] of Text;
+        RemiteAddr: array[8] of Text;
         SalesPersonText: Text[50];
         TotalText: Text[50];
         TotalExclVATText: Text[50];
@@ -1517,11 +1536,20 @@ report 50100 "BBC WOSF Sales Invoice"
     end;
 
     local procedure FormatAddressFields(var SalesInvoiceHeader: Record "Sales Invoice Header");
+    var
+        Location: Record Location;
     begin
         FormatAddress.GetCompanyAddr(SalesInvoiceHeader."Responsibility Center", ResponsibilityCenter, CompanyInformation, CompanyAddr);
         FormatAddress.SalesInvBillTo(CustAddr, SalesInvoiceHeader);
         ShowShippingAddr := FormatAddress.SalesInvShipTo(ShipToAddr, CustAddr, SalesInvoiceHeader);
         ShowShippingAddr := true;
+        if (SalesInvoiceHeader."Location Code" <> '') and Location.Get(SalesInvoiceHeader."Location Code") then
+            FormatAddress.FormatAddr(RemiteAddr, Location.Name, Location."Name 2", '', Location.Address, Location."Address 2", Location.City,
+            Location."Post Code", Location.County, Location."Country/Region Code")
+        else
+            Clear(RemiteAddr);
+
+
     end;
 
     local procedure FormatDocumentFields(SalesInvoiceHeader: Record "Sales Invoice Header");

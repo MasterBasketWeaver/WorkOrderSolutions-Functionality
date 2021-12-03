@@ -16,6 +16,12 @@
       "name": "US Sales Reports",
       "publisher": "Bam Boom Cloud",
       "version": "18.0.0.5"
+    },
+    {
+      "id": "330ff4ce-7c8c-4b93-827b-608d399eaece",
+      "name": "Workover Solutions Customization",
+      "publisher": "RSM US LLP",
+      "version": "1.0.0.0"
     }
   ],
   "screenshots": [],
@@ -23,20 +29,15 @@
   "platform": "18.0.0.0",
   "idRanges": [
     {
-      "from": 50100,
-      "to": 50199
+      "from": 50200,
+      "to": 50299
     }
   ],
   "contextSensitiveHelpUrl": "https://bamboomcloud.com/help/",
-  "resourceExposurePolicy":
-  {
-    "allowDebugging": true,
-    "allowDownloadingSource": true,
-    "includeSourceInSymbolFile": true
-  },
+  "showMyCode": true,
   "features": ["TranslationFile"],
   "applicationInsightsConnectionString": "InstrumentationKey=d26ca36d-e333-43cd-9de5-1ea5c85f8e39;IngestionEndpoint=https://uksouth-0.in.applicationinsights.azure.com/",
-  "runtime": "8.0",
+  "runtime": "7.2",
   "target": "Cloud",
   "propagateDependencies": true
 }

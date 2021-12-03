@@ -11,10 +11,16 @@
   "url": "http://www.bamboomcloud.com/",
   "logo": "./Logo/BBClogo.png",
   "dependencies": [
-
+    {
+      "id": "54a2cd9a-68ac-aaaa-be04-69a42712f76d",
+      "name": "US Sales Reports",
+      "publisher": "Bam Boom Cloud",
+      "version": "18.0.0.5"
+    }
   ],
   "screenshots": [],
   "application": "18.0.0.0",
+  "platform": "18.0.0.0",
   "idRanges": [
     {
       "from": 50100,

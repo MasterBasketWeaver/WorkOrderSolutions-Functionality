@@ -3,11 +3,11 @@
     "configurations": [
         {
             //https://businesscentral.dynamics.com/1c4d30cc-591b-472c-972f-4e031694a043/admin
-            "name": "Workover Solutions - Sandbox",
+            "name": "Workover Solutions - SandboxDev",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "sandbox",
+            "environmentName": "sandboxDev",
             "tenant": "1c4d30cc-591b-472c-972f-4e031694a043",
             "startupObjectId": 50103,
             "startupObjectType": "Page",

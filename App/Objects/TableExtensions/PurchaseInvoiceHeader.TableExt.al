@@ -1,4 +1,4 @@
-tableextension 50202 "BBC WOSF Purch. Inv. Header" extends "Purch. Inv. Header"
+tableextension 60002 "BBC WOSF Purch. Inv. Header" extends "Purch. Inv. Header"
 {
     fields
     {

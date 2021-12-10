@@ -1,4 +1,4 @@
-codeunit 50200 "BBC WOSF Subscribers"
+codeunit 60010 "BBC WOSF Subscribers"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnBeforeInsertReceiptHeader', '', false, false)]
     local procedure PurchPostOnBeforeInsertReceiptHeader(var PurchHeader: Record "Purchase Header"; var PurchRcptHeader: Record "Purch. Rcpt. Header")

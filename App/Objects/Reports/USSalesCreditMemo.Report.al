@@ -1,4 +1,4 @@
-report 50201 "BBC WOSF Sales Credit Memo"
+report 60001 "BBC WOSF Sales Credit Memo"
 {
     RDLCLayout = './Objects/Reports/Layouts/Sales Credit Memo.rdl';
     WordLayout = './Objects/Reports/Layouts/Sales Credit Memo.docx';

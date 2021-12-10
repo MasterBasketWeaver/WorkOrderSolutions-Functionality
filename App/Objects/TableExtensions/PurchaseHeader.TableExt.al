@@ -1,8 +1,8 @@
-tableextension 50200 "BBC WOSF Purch. Header" extends "Purchase Header"
+tableextension 60000 "BBC WOSF Purch. Header" extends "Purchase Header"
 {
     fields
     {
-        field(50200; "BBC WSOF Notes"; Blob)
+        field(60000; "BBC WSOF Notes"; Blob)
         {
             DataClassification = CustomerContent;
             Caption = 'Notes';

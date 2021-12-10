@@ -29,8 +29,8 @@
   "platform": "18.0.0.0",
   "idRanges": [
     {
-      "from": 50200,
-      "to": 50299
+      "from": 60000,
+      "to": 60099
     }
   ],
   "contextSensitiveHelpUrl": "https://bamboomcloud.com/help/",

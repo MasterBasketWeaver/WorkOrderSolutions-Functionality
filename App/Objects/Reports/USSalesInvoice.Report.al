@@ -1,4 +1,4 @@
-report 50200 "BBC WOSF Sales Invoice"
+report 60000 "BBC WOSF Sales Invoice"
 {
     RDLCLayout = './Objects/Reports/Layouts/Sales Invoice.rdl';
     WordLayout = './Objects/Reports/Layouts/Sales Invoice.docx';

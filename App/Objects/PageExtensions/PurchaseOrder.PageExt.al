@@ -1,4 +1,4 @@
-pageextension 50200 "BBC WOSF Purchase Order" extends "Purchase Order"
+pageextension 60000 "BBC WOSF Purchase Order" extends "Purchase Order"
 {
     layout
     {

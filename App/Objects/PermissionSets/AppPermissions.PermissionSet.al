@@ -1,4 +1,4 @@
-permissionset 50200 "BBC WOSF Permissions"
+permissionset 60000 "BBC WOSF Permissions"
 {
     Caption = 'Workover Solutions Permissions';
     Permissions =

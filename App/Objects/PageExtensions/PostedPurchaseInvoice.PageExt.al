@@ -1,4 +1,4 @@
-pageextension 50202 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoice"
+pageextension 60002 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoice"
 {
     layout
     {

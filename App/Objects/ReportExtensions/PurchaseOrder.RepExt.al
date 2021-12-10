@@ -1,10 +1,13 @@
-reportextension 50200 "BBC WOSF Purchase Order" extends "Standard Purchase - Order"
+reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Order"
 {
+    WordLayout = './Objects/Reports/Layouts/Purchase Order.docx';
+
     dataset
     {
         add("Purchase Header")
         {
             column(Notes; ReadFromNotes()) { }
+
         }
 
         add("Purchase Line")
@@ -28,4 +31,5 @@ reportextension 50200 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
 
     var
         SerialNo: Text;
+
 }

@@ -7,13 +7,13 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
         add("Purchase Header")
         {
             column(Notes; ReadFromNotes()) { }
-
         }
 
         add("Purchase Line")
         {
             column(LineNo; "Line No.") { }
             column(SerialNo; SerialNo) { }
+            column(DescriptionWithSerial; DescriptionText.ToText()) { }
         }
         modify("Purchase Line")
         {
@@ -21,15 +21,16 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
             var
                 FixedAsset: Record "Fixed Asset";
             begin
+                DescriptionText.Clear();
+                DescriptionText.AppendLine(Description);
                 if (Type = Type::"Fixed Asset") and FixedAsset.Get("No.") then
-                    SerialNo := FixedAsset."Serial No."
-                else
-                    SerialNo := '';
+                    DescriptionText.AppendLine(FixedAsset."Serial No.");
             end;
         }
     }
 
     var
+        DescriptionText: TextBuilder;
         SerialNo: Text;
 
 }

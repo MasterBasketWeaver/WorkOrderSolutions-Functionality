@@ -879,7 +879,7 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet_Result</DataSetName>
                               <Left>0.96663cm</Left>
-                              <Height>3.10600cm</Height>
+                              <Height>3.10502cm</Height>
                               <Width>19.2cm</Width>
                               <Style>
                                 <Border>
@@ -3725,14 +3725,14 @@
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="VATAmount_Lbl_2">
+                                          <Textbox Name="Textbox14">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Sales Tax</Value>
+                                                    <Value>=Fields!Description_ReportTotalsLine.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3742,7 +3742,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>VATAmount_Lbl_2</rd:DefaultName>
+                                            <rd:DefaultName>Textbox13</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -3759,14 +3759,14 @@
                                       <TablixCell />
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="TotalVATAmount">
+                                          <Textbox Name="Textbox16">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Last(Fields!TotalVATAmount.Value)</Value>
+                                                    <Value>=Fields!Amount_ReportTotalsLine.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3778,7 +3778,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>TotalVATAmount</rd:DefaultName>
+                                            <rd:DefaultName>Textbox16</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -4175,8 +4175,18 @@
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember>
+                                    <Group Name="Group1">
+                                      <GroupExpressions>
+                                        <GroupExpression>=Fields!TotalsLineNo.Value</GroupExpression>
+                                      </GroupExpressions>
+                                    </Group>
+                                    <SortExpressions>
+                                      <SortExpression>
+                                        <Value>[]</Value>
+                                      </SortExpression>
+                                    </SortExpressions>
                                     <Visibility>
-                                      <Hidden>=(Last(Fields!TotalVATAmount.Value) = 0) Or (Fields!PricesIncludingVAT.Value = True)</Hidden>
+                                      <Hidden>=Fields!TotalsLineNo.Value &lt; 2</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember />
@@ -5578,6 +5588,12 @@ End Function
         </Field>
         <Field Name="FontUnderline_ReportTotalsLine">
           <DataField>FontUnderline_ReportTotalsLine</DataField>
+        </Field>
+        <Field Name="TaxText">
+          <DataField>TaxText</DataField>
+        </Field>
+        <Field Name="TotalsLineNo">
+          <DataField>TotalsLineNo</DataField>
         </Field>
         <Field Name="GreetingText">
           <DataField>GreetingText</DataField>

@@ -751,6 +751,7 @@ report 60001 "BBC WOSF Sales Credit Memo"
                 column(FontUnderline_ReportTotalsLine; "Font Underline")
                 {
                 }
+                column(TotalsLineNo; "Line No.") { }
 
                 trigger OnPreDataItem();
                 begin

@@ -54,22 +54,14 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
 
     local procedure FormatDDMMYYYYDate(Input: Date): Text
     var
-        DD, MM, YYYY : Integer;
-        Days, Months, Years : Text;
+        YYYY: Integer;
+        Years: Text;
     begin
-        DD := Date2DMY(Input, 1);
-        MM := Date2DMY(Input, 2);
         YYYY := Date2DMY(Input, 3);
-        Days := Format(DD);
-        Months := Format(MM);
         Years := Format(YYYY);
-        if DD < 10 then
-            Days := '0' + Days;
-        if MM < 10 then
-            Months := '0' + Months;
         if YYYY < 99 then
             Years := '20' + Years;
-        exit(StrSubstNo('%1/%2/%3', Days, Months, Years));
+        exit(StrSubstNo('%1/%2', Format(Input, 0, '<Day,2>/<Month,2>'), Years));
     end;
 
     var

@@ -9,7 +9,7 @@
             "environmentType": "Sandbox",
             "environmentName": "sandboxDev",
             "tenant": "1c4d30cc-591b-472c-972f-4e031694a043",
-            "startupObjectId": 50103,
+            "startupObjectId": 42,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": false,

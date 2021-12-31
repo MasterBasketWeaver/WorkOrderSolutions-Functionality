@@ -23,6 +23,7 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
             column(LineNo; "Line No.") { }
             column(SerialNo; SerialNo) { }
             column(DescriptionWithSerial; DescriptionText.ToText()) { }
+            column(FormattedPlannedReceiptDate; FormatDDMMYYYYDate("Purchase Line"."Planned Receipt Date")) { }
         }
         modify("Purchase Line")
         {
@@ -57,6 +58,8 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
         YYYY: Integer;
         Years: Text;
     begin
+        if Input = 0D then
+            exit('');
         YYYY := Date2DMY(Input, 3);
         Years := Format(YYYY);
         if YYYY < 99 then

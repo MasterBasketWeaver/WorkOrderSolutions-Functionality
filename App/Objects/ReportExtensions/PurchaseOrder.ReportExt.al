@@ -8,7 +8,7 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
         {
             column(Notes; GetNotesText("Purchase Header")) { }
             column(NoOfArchivedVersions; "No. of Archived Versions") { }
-            column(FormattedDocumentDate; FormatDDMMYYYYDate("Purchase Header"."Document Date")) { }
+            column(FormattedDocumentDate; FormatMMDDYYYYDate("Purchase Header"."Document Date")) { }
         }
         modify("Purchase Header")
         {
@@ -23,7 +23,7 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
             column(LineNo; "Line No.") { }
             column(SerialNo; SerialNo) { }
             column(DescriptionWithSerial; DescriptionText.ToText()) { }
-            column(FormattedPlannedReceiptDate; FormatDDMMYYYYDate("Purchase Line"."Planned Receipt Date")) { }
+            column(FormattedPlannedReceiptDate; FormatMMDDYYYYDate("Purchase Line"."Planned Receipt Date")) { }
         }
         modify("Purchase Line")
         {
@@ -53,7 +53,7 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
         exit(StrSubstNo('%1%3%2', PurchHeader."RSMUS External Comments", s, NewLine));
     end;
 
-    local procedure FormatDDMMYYYYDate(Input: Date): Text
+    local procedure FormatMMDDYYYYDate(Input: Date): Text
     var
         YYYY: Integer;
         Years: Text;
@@ -64,7 +64,7 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
         Years := Format(YYYY);
         if YYYY < 99 then
             Years := '20' + Years;
-        exit(StrSubstNo('%1/%2', Format(Input, 0, '<Day,2>/<Month,2>'), Years));
+        exit(StrSubstNo('%1/%2', Format(Input, 0, '<Month,2>/<Day,2>'), Years));
     end;
 
     var

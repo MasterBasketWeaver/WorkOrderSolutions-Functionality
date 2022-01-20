@@ -1,8 +1,8 @@
-pageextension 60082 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoice"
+pageextension 60043 "BBC WOSF Item Ledger Entries" extends "Item Ledger Entries"
 {
     layout
     {
-        addlast(General)
+        addafter("Dimension Set ID")
         {
             field("BBC WOSF Internal Comments"; Rec."BBC WOSF Internal Comments")
             {
@@ -11,13 +11,14 @@ pageextension 60082 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoi
             field("BBC WOSF External Comments"; Rec."BBC WOSF External Comments")
             {
                 ApplicationArea = All;
+
             }
-            field(Notes; Rec.ReadFromNotes())
+        }
+        addafter("Item No.")
+        {
+            field("BBC WOSF Item Description"; Rec."BBC WOSF Item Description")
             {
-                ApplicationArea = all;
-                MultiLine = true;
-                Editable = false;
-                ToolTip = 'Specifies additional information entered by the user.';
+                ApplicationArea = All;
             }
         }
     }

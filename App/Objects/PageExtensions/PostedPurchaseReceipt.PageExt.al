@@ -1,4 +1,4 @@
-pageextension 60001 "BBC WOSF Posted Purch. Rcpt." extends "Posted Purchase Receipt"
+pageextension 60081 "BBC WOSF Posted Purch. Rcpt." extends "Posted Purchase Receipt"
 {
     layout
     {

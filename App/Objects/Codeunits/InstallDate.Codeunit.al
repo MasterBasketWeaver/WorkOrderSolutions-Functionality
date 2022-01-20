@@ -1,4 +1,4 @@
-codeunit 60001 "BBC WSOF Install Data"
+codeunit 60001 "BBC WOSF Install Data"
 {
     Subtype = Install;
 

@@ -1,4 +1,4 @@
-pageextension 60003 "BBC WOSF Sales Order" extends "Sales Order"
+pageextension 60020 "BBC WOSF Posted Sales Invoice" extends "Posted Sales Invoice"
 {
     layout
     {
@@ -14,44 +14,39 @@ pageextension 60003 "BBC WOSF Sales Order" extends "Sales Order"
             }
             field("BBC WOSF Well"; Rec."BBC WOSF Well")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF Rig or CTU"; Rec."BBC WOSF Rig or CTU")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF County"; Rec."BBC WOSF County")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF Customer Rep"; Rec."BBC WOSF Customer Rep")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF WOS Job"; Rec."BBC WOSF WOS Job")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF Service Start Date"; Rec."BBC WOSF Service Start Date")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF Customer Reference"; Rec."BBC WOSF Customer Reference")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF Client PO"; Rec."BBC WOSF Client PO")
             {
-                ApplicationArea = all;
+                ApplicationArea = All;
             }
             field("BBC WOSF AFE"; Rec."BBC WOSF AFE")
             {
-                ApplicationArea = all;
-            }
-            field("BBC WOSF Creation Date"; Rec."BBC WOSF Creation Date")
-            {
-                ApplicationArea = all;
-                Visible = false;
+                ApplicationArea = All;
             }
         }
     }

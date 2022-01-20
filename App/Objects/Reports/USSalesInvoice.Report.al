@@ -434,15 +434,15 @@ report 60000 "BBC WOSF Sales Invoice"
             column(RemiteAddr6; RemiteAddr[6]) { }
             column(RemiteAddr7; RemiteAddr[7]) { }
             column(RemiteAddr8; RemiteAddr[8]) { }
-            column(HeaderWell; "RSMUS Well") { }
-            column(HeaderRigOrCTU; "RSMUS Rig or CTU") { }
-            column(HeaderCounty; "RSMUS County") { }
-            column(HeaderCustomerRep; "RSMUS Customer Rep") { }
-            column(HeaderWOSJob; "RSMUS WOS Job") { }
-            column(HeaderCustomerReference; "RSMUS Customer Reference") { }
-            column(HeaderServiceStartDate; DateFormatMgt.GetDateText("RSMUS Service Start Date")) { }
-            column(HeaderClientPO; "RSMUS Client PO") { }
-            column(HeaderAFE; "RSMUS AFE") { }
+            column(HeaderWell; "BBC WOSF Well") { }
+            column(HeaderRigOrCTU; "BBC WOSF Rig or CTU") { }
+            column(HeaderCounty; "BBC WOSF County") { }
+            column(HeaderCustomerRep; "BBC WOSF Customer Rep") { }
+            column(HeaderWOSJob; "BBC WOSF WOS Job") { }
+            column(HeaderCustomerReference; "BBC WOSF Customer Reference") { }
+            column(HeaderServiceStartDate; DateFormatMgt.GetDateText("BBC WOSF Service Start Date")) { }
+            column(HeaderClientPO; "BBC WOSF Client PO") { }
+            column(HeaderAFE; "BBC WOSF AFE") { }
             column(PaymentTerms; PaymentTerms.Code) { }
             column(GetWorkDescription; GetWorkDescription()) { }
 

@@ -1,4 +1,4 @@
-report 60005 "BBC WSOF Transfer Fields"
+report 60005 "BBC WOSF Transfer Fields"
 {
     Caption = 'Transfer Customer Fields';
     ApplicationArea = all;
@@ -8,7 +8,7 @@ report 60005 "BBC WSOF Transfer Fields"
 
     trigger OnPostReport()
     var
-        InstallData: Codeunit "BBC WSOF Install Data";
+        InstallData: Codeunit "BBC WOSF Install Data";
     begin
         if not Confirm('Transfer Custom Fields?') then
             exit;

@@ -2,7 +2,7 @@ tableextension 60008 "BBC WOSF Purch. Header" extends "Purchase Header"
 {
     fields
     {
-        field(60000; "BBC WSOF Notes"; Blob)
+        field(60000; "BBC WOSF Notes"; Blob)
         {
             DataClassification = CustomerContent;
             Caption = 'Notes';
@@ -23,8 +23,8 @@ tableextension 60008 "BBC WOSF Purch. Header" extends "Purchase Header"
     var
         OStream: OutStream;
     begin
-        Clear(Rec."BBC WSOF Notes");
-        Rec."BBC WSOF Notes".CreateOutStream(OStream, TextEncoding::UTF8);
+        Clear(Rec."BBC WOSF Notes");
+        Rec."BBC WOSF Notes".CreateOutStream(OStream, TextEncoding::UTF8);
         OStream.WriteText(Input);
     end;
 
@@ -32,8 +32,8 @@ tableextension 60008 "BBC WOSF Purch. Header" extends "Purchase Header"
     var
         IStream: InStream;
     begin
-        Rec.CalcFields("BBC WSOF Notes");
-        Rec."BBC WSOF Notes".CreateInStream(IStream, TextEncoding::UTF8);
+        Rec.CalcFields("BBC WOSF Notes");
+        Rec."BBC WOSF Notes".CreateInStream(IStream, TextEncoding::UTF8);
         Clear(TypeHelper);
         exit(TypeHelper.ReadAsTextWithSeparator(IStream, TypeHelper.LFSeparator()));
     end;

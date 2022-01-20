@@ -14,13 +14,13 @@ tableextension 60015 "BBC WOSF Sales Inv. Line" extends "Sales Invoice Line"
             Editable = false;
             Caption = 'Serial Quantities';
         }
-        field(60005; "BBC WOSFPR/RSA"; text[100])
+        field(60005; "BBC WOSF PR/RSA"; text[100])
         {
             DataClassification = CustomerContent;
             Caption = 'PR No./RSA No.';
             Editable = false;
         }
-        field(60006; "BBC WOSFUnit Numbers"; text[100])
+        field(60006; "BBC WOSF Unit Numbers"; text[100])
         {
             DataClassification = CustomerContent;
             Caption = 'Unit Numbers';

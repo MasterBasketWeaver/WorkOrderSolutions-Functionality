@@ -1,4 +1,4 @@
-pageextension 60082 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoice"
+pageextension 60008 "BBC WOSF Purchase Quote" extends "Purchase Quote"
 {
     layout
     {
@@ -11,13 +11,6 @@ pageextension 60082 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoi
             field("BBC WOSF External Comments"; Rec."BBC WOSF External Comments")
             {
                 ApplicationArea = All;
-            }
-            field(Notes; Rec.ReadFromNotes())
-            {
-                ApplicationArea = all;
-                MultiLine = true;
-                Editable = false;
-                ToolTip = 'Specifies additional information entered by the user.';
             }
         }
     }

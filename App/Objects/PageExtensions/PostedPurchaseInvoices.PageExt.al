@@ -1,8 +1,8 @@
-pageextension 60082 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoice"
+pageextension 60050 "BBC WOSF Posted Purch. Invs." extends "Posted Purchase Invoices"
 {
     layout
     {
-        addlast(General)
+        addafter(Amount)
         {
             field("BBC WOSF Internal Comments"; Rec."BBC WOSF Internal Comments")
             {
@@ -12,12 +12,12 @@ pageextension 60082 "BBC WOSF Posted Purch. Inv." extends "Posted Purchase Invoi
             {
                 ApplicationArea = All;
             }
-            field(Notes; Rec.ReadFromNotes())
+        }
+        addafter("Posting Date")
+        {
+            field("BBC WOSFPosting Description"; Rec."Posting Description")
             {
-                ApplicationArea = all;
-                MultiLine = true;
-                Editable = false;
-                ToolTip = 'Specifies additional information entered by the user.';
+                ApplicationArea = All;
             }
         }
     }

@@ -1,4 +1,4 @@
-tableextension 60009 "BBC WSOF Purch. CM. Hdr." extends "Purch. Cr. Memo Hdr."
+tableextension 60009 "BBC WOSF Purch. CM. Hdr." extends "Purch. Cr. Memo Hdr."
 {
     fields
     {

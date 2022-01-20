@@ -45,12 +45,12 @@ reportextension 60000 "BBC WOSF Purchase Order" extends "Standard Purchase - Ord
         NewLine: Text[1];
     begin
         s := PurchHeader.ReadFromNotes();
-        if PurchHeader."RSMUS External Comments" = '' then
+        if PurchHeader."BBC WOSF External Comments" = '' then
             exit(s);
         if s = '' then
-            exit(PurchHeader."RSMUS External Comments");
+            exit(PurchHeader."BBC WOSF External Comments");
         NewLine[1] := 10;
-        exit(StrSubstNo('%1%3%2', PurchHeader."RSMUS External Comments", s, NewLine));
+        exit(StrSubstNo('%1%3%2', PurchHeader."BBC WOSF External Comments", s, NewLine));
     end;
 
     local procedure FormatMMDDYYYYDate(Input: Date): Text

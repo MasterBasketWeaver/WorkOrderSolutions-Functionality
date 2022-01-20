@@ -1,4 +1,4 @@
-tableextension 60000 "BBC WOSF Purch. Header" extends "Purchase Header"
+tableextension 60008 "BBC WOSF Purch. Header" extends "Purchase Header"
 {
     fields
     {
@@ -6,6 +6,16 @@ tableextension 60000 "BBC WOSF Purch. Header" extends "Purchase Header"
         {
             DataClassification = CustomerContent;
             Caption = 'Notes';
+        }
+        field(60010; "BBC WOSF Internal Comments"; Text[250])
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Internal Comments';
+        }
+        field(60011; "BBC WOSF External Comments"; Text[250])
+        {
+            DataClassification = CustomerContent;
+            Caption = 'External Comments';
         }
     }
 

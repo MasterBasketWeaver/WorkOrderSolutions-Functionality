@@ -2,10 +2,23 @@ tableextension 60002 "BBC WOSF Purch. Inv. Header" extends "Purch. Inv. Header"
 {
     fields
     {
-        field(50101; "BBC WOSF Notes"; Blob)
+        field(60001; "BBC WOSF Notes"; Blob)
         {
             DataClassification = CustomerContent;
             Caption = 'Notes';
+        }
+
+        field(60010; "BBC WOSF Internal Comments"; Text[250])
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Internal Comments';
+            Editable = false;
+        }
+        field(60011; "BBC WOSF External Comments"; Text[250])
+        {
+            DataClassification = CustomerContent;
+            Caption = 'External Comments';
+            Editable = false;
         }
     }
 

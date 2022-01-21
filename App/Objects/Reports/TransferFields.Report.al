@@ -1,6 +1,6 @@
 report 60005 "BBC WOSF Transfer Fields"
 {
-    Caption = 'Transfer Customer Fields';
+    Caption = 'Transfer Custom Fields';
     ApplicationArea = all;
     UsageCategory = Tasks;
     ProcessingOnly = true;
